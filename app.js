@@ -1,7 +1,9 @@
 require('dotenv').config()
 const { criticalLog, warningLog, debugLog } = require('./logger')
+const { timer } = require('./timer')
 try {
-    blabla()
+    // blabla()
+    timer()
 }
 catch (e) {
     criticalLog(e.stack)
